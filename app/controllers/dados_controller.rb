@@ -6,26 +6,26 @@ class DadosController < ApplicationController
     for i in 0..@num do
       @dado.append(rand(1..6))
     end
-    @numcu = [0 0 0 0 0 0]
+    @num_vezes = [0 0 0 0 0 0]
     for i in 0..@num do
       case @dado[i]
       when 1
-        @numcu[0] = @numcu[0] + 1
+        @num_vezes[0] = @num_vezes[0] + 1
       end
       when 2
-        @numcu[1] = @numcu[1] + 1
+        @num_vezes[1] = @num_vezes[1] + 1
       end
       when 3
-        @numcu[2] = @numcu[2] + 1
+        @num_vezes[2] = @num_vezes[2] + 1
       end
       when 4
-        @numcu[3] = @numcu[3] + 1
+        @num_vezes[3] = @num_vezes[3] + 1
       end
       when 5
-        @numcu[4] = @numcu[4] + 1
+        @num_vezes[4] = @num_vezes[4] + 1
       end
       when 6
-        @numcu[5] = @numcu[5] + 1
+        @num_vezes[5] = @num_vezes[5] + 1
       end
     end
   end
