@@ -33,7 +33,8 @@ class DadosController < ApplicationController
   private
   
   def dados_params
-    params.require(:dado).permit(:num)
+    # talvez :dado e :num_vezes nao seja necessario
+    params.require(:dado).permit(:num, :dado, :num_vezes)
   end
 
 end
